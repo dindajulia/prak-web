@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Kanit&family=Poppins&family=Rubik+Moonrocks&display=swap');
+
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family:  'Comfortaa', cursive;
+    background-color: white;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a {
+    font-size: 30px;
+    font-weight: 500;
+    float: left;
+    color: brown;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    line-height: 60px;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    background: white;
+    z-index: 1;
+    border-bottom:1px solid brown;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    text-align: center;
+}
+
+nav ul li a {
+    color: brown;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    display: block;
+}
+
+.search-box{
+    float: right;
+    top: 2px;
+    margin-left: 30px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.search-box input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 20px;
+    color: brown;
+    font-size: 16px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 40px;
+}
+
+.search-box button{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    transform: scale(0.9);
+    background-color: brown;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1{
+    color: brown;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.container h2{
+    color: var(--dark);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.blogs__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    height: 50%;
+    padding: 1rem;
+}
+
+.post{
+    background-color: beige;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--dark)
+}
+
+.post:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.post img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid #ddd
+}
+
+.post small{
+    margin: 10px 0;
+    padding: 3px 10px;
+    background-color: var(--dark);
+    border-radius: 10px;
+    color: grey;
+    width: fit-content;
+}
+
+.post .description{
+    margin: 10px 0;
+    height: 30%;
+}
+
+.post .more{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: brown;
+}
+
+.more p{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.more i{
+    font-size: 25px;
+}
+
+.pagination {
+    text-align: center;
+    margin: 0px 30px 60px;
+    user-select: none;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 5px 25px rgb (1 1 1 / 10%);
+}
+
+.pagination li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    line-height: 45px;
+}
+
+.previous-page, .next-page {
+    background: brown;
+    width: 80px;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.previous-page:hover {
+    transform: translateY(-5px);
+}
+
+.next-page:hover {
+    transform: translateY(5px);
+}
+
+.current-page, .dots {
+    background: rgb(202, 195, 195);
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active {
+    background: brown;
+}
+
+.disable {
+    background: rgb(202, 195, 195);
+}
+
+.kolom .deskripsi {
+    margin-top: 80px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family:  'Comfortaa', cursive;
+    color: brown;
+}
+
+a.tbl-white:hover {
+    background: rgb(202, 195, 195);
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.kartu-profile {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.kartu-profile img {
+    margin-top: 30px;
+    width: 90%;
+    border-radius: 100%;
+}
+
+.kartu-profile p {
+    font-family:  'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    color: brown;
+}
+
+.kartu-profile h2 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    text-align: center;
+    color: grey;
+}
+
+.kartu-profile h3 {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: black;
+}
+
+.account-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kartu-account {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-account img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col{
+   width: 25%;
+   padding: 10 15px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: brown;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive footer*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        padding: 0 25px;
+    }
+
+    nav .menu ul {
+        font-size: 15px;
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .kartu-host {
+        width: 50%;
+    }
+
+    .kartu-account {
+        width: 50%;
+    }
+}
+}
